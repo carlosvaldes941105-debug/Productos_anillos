@@ -1,8 +1,4 @@
-import pandas as pd
 import requests
-from bs4 import BeautifulSoup
-# Guardar el script completo en un archivo .py local
-script_code = """import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
@@ -40,6 +36,3 @@ for item_div in productos:
 df = pd.DataFrame(datos)
 df.to_csv("catalogo_productos.csv", index=False)
 print("Scraping exitoso y archivo catalogo_libros.csv creado.")
-"""
-with open("productos.py", "w", encoding="utf-8") as f:
-    f.write(script_code)
