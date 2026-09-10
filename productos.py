@@ -16,10 +16,10 @@ for item_div in productos:
   titulo_element = item_div.find("div", class_="product-block__title")
   titulo = titulo_element.text.strip() if titulo_element else "N/A"
   precio_element = item_div.find("span", class_="product-price__item")
-    if precio_element:
-        precio_texto = precio_element.text
-        precio = float(precio_texto.replace("$", "").replace(",", "").strip())
-    else:
+  if precio_element:
+      precio_texto = precio_element.text
+      precio = float(precio_texto.replace("$", "").replace(",", "").strip())
+  else:
         precio = None
   color_container = item_div.find("div", class_="product-block-options__inner")
   color_element = None
