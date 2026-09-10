@@ -7,7 +7,7 @@ response = requests.get(url)
 response.encoding = 'utf-8'
 
 soup = BeautifulSoup(response.text, "html.parser")
-productos = texto.find_all("div", class_="inner")
+productos = productos.find_all("div", class_="inner")
 
 datos = []
 for item_div in productos:
